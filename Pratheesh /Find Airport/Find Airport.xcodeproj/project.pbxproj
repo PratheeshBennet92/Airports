@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A663CB423906CFF008AB5DB /* NearestAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A663CB323906CFF008AB5DB /* NearestAirport.swift */; };
+		4A663CB623906D1B008AB5DB /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A663CB523906D1B008AB5DB /* Airport.swift */; };
+		F446B72D2390015C004A6F17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B72C2390015C004A6F17 /* AppDelegate.swift */; };
+		F446B72F2390015C004A6F17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B72E2390015C004A6F17 /* SceneDelegate.swift */; };
+		F446B7312390015C004A6F17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B7302390015C004A6F17 /* ViewController.swift */; };
+		F446B7342390015C004A6F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F446B7322390015C004A6F17 /* Main.storyboard */; };
+		F446B7372390015C004A6F17 /* Find_Airport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F446B7352390015C004A6F17 /* Find_Airport.xcdatamodeld */; };
+		F446B7392390015D004A6F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F446B7382390015D004A6F17 /* Assets.xcassets */; };
+		F446B73C2390015D004A6F17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F446B73A2390015D004A6F17 /* LaunchScreen.storyboard */; };
+		F446B7472390015D004A6F17 /* Find_AirportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B7462390015D004A6F17 /* Find_AirportTests.swift */; };
+		F446B7522390015D004A6F17 /* Find_AirportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B7512390015D004A6F17 /* Find_AirportUITests.swift */; };
+		F446B76623900613004A6F17 /* AirportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B76423900613004A6F17 /* AirportListViewController.swift */; };
+		F446B76A2390065D004A6F17 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B7682390065D004A6F17 /* ResultsTableViewController.swift */; };
+		F446B76B2390065D004A6F17 /* ResultsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F446B7692390065D004A6F17 /* ResultsTableViewController.xib */; };
+		F446B771239008A5004A6F17 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B770239008A5004A6F17 /* AirportListViewModel.swift */; };
+		F446B77423900A7C004A6F17 /* AirportsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B77323900A7C004A6F17 /* AirportsDataStore.swift */; };
+		F446B77623900A97004A6F17 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B77523900A97004A6F17 /* NetworkHandler.swift */; };
+		F446B77A239011AB004A6F17 /* AirportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B779239011AB004A6F17 /* AirportRequest.swift */; };
+		F446B77C239014CF004A6F17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B77B239014CF004A6F17 /* Constants.swift */; };
+		F446B77E23902D91004A6F17 /* AirportsBussinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B77D23902D91004A6F17 /* AirportsBussinessLayer.swift */; };
+		F446B78123903A2B004A6F17 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B77F23903A2B004A6F17 /* DetailTableViewController.swift */; };
+		F446B78223903A2B004A6F17 /* DetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F446B78023903A2B004A6F17 /* DetailTableViewController.xib */; };
+		F446B78523903BE6004A6F17 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B78323903BE6004A6F17 /* DetailTableViewCell.swift */; };
+		F446B78623903BE6004A6F17 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F446B78423903BE6004A6F17 /* DetailTableViewCell.xib */; };
+		F446B788239040EC004A6F17 /* AirportListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F446B787239040EC004A6F17 /* AirportListViewController.xib */; };
+		F446B78C23905379004A6F17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B78B23905379004A6F17 /* BaseViewController.swift */; };
+		F446B78E23905587004A6F17 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446B78D23905587004A6F17 /* ActivityIndicator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F446B7432390015D004A6F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F446B7212390015C004A6F17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F446B7282390015C004A6F17;
+			remoteInfo = "Find Airport";
+		};
+		F446B74E2390015D004A6F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F446B7212390015C004A6F17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F446B7282390015C004A6F17;
+			remoteInfo = "Find Airport";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A663CB323906CFF008AB5DB /* NearestAirport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestAirport.swift; sourceTree = "<group>"; };
+		4A663CB523906D1B008AB5DB /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		F446B7292390015C004A6F17 /* Find Airport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Airport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F446B72C2390015C004A6F17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F446B72E2390015C004A6F17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F446B7302390015C004A6F17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F446B7332390015C004A6F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F446B7362390015C004A6F17 /* Find_Airport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Find_Airport.xcdatamodel; sourceTree = "<group>"; };
+		F446B7382390015D004A6F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F446B73B2390015D004A6F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F446B73D2390015D004A6F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F446B7422390015D004A6F17 /* Find AirportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find AirportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F446B7462390015D004A6F17 /* Find_AirportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_AirportTests.swift; sourceTree = "<group>"; };
+		F446B7482390015D004A6F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F446B74D2390015D004A6F17 /* Find AirportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find AirportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F446B7512390015D004A6F17 /* Find_AirportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_AirportUITests.swift; sourceTree = "<group>"; };
+		F446B7532390015D004A6F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F446B76423900613004A6F17 /* AirportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewController.swift; sourceTree = "<group>"; };
+		F446B7682390065D004A6F17 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		F446B7692390065D004A6F17 /* ResultsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsTableViewController.xib; sourceTree = "<group>"; };
+		F446B770239008A5004A6F17 /* AirportListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModel.swift; sourceTree = "<group>"; };
+		F446B77323900A7C004A6F17 /* AirportsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsDataStore.swift; sourceTree = "<group>"; };
+		F446B77523900A97004A6F17 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		F446B779239011AB004A6F17 /* AirportRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRequest.swift; sourceTree = "<group>"; };
+		F446B77B239014CF004A6F17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F446B77D23902D91004A6F17 /* AirportsBussinessLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsBussinessLayer.swift; sourceTree = "<group>"; };
+		F446B77F23903A2B004A6F17 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		F446B78023903A2B004A6F17 /* DetailTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewController.xib; sourceTree = "<group>"; };
+		F446B78323903BE6004A6F17 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		F446B78423903BE6004A6F17 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		F446B787239040EC004A6F17 /* AirportListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirportListViewController.xib; sourceTree = "<group>"; };
+		F446B78B23905379004A6F17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F446B78D23905587004A6F17 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F446B7262390015C004A6F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F446B73F2390015D004A6F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F446B74A2390015D004A6F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A663CB723906D58008AB5DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F446B78B23905379004A6F17 /* BaseViewController.swift */,
+				F446B76423900613004A6F17 /* AirportListViewController.swift */,
+				F446B787239040EC004A6F17 /* AirportListViewController.xib */,
+				F446B7682390065D004A6F17 /* ResultsTableViewController.swift */,
+				F446B7692390065D004A6F17 /* ResultsTableViewController.xib */,
+				F446B77F23903A2B004A6F17 /* DetailTableViewController.swift */,
+				F446B78023903A2B004A6F17 /* DetailTableViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4A663CB823906D7C008AB5DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F446B78323903BE6004A6F17 /* DetailTableViewCell.swift */,
+				F446B78423903BE6004A6F17 /* DetailTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4A663CB923906D9B008AB5DB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F446B77B239014CF004A6F17 /* Constants.swift */,
+				F446B78D23905587004A6F17 /* ActivityIndicator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4A663CBA23906DFA008AB5DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F446B77523900A97004A6F17 /* NetworkHandler.swift */,
+				F446B779239011AB004A6F17 /* AirportRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4A663CBB23906E11008AB5DB /* BussinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F446B77D23902D91004A6F17 /* AirportsBussinessLayer.swift */,
+			);
+			path = BussinessLayer;
+			sourceTree = "<group>";
+		};
+		4A663CBC239077D6008AB5DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A663CB723906D58008AB5DB /* ViewController */,
+				4A663CB823906D7C008AB5DB /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F446B7202390015C004A6F17 = {
+			isa = PBXGroup;
+			children = (
+				F446B72B2390015C004A6F17 /* Find Airport */,
+				F446B7452390015D004A6F17 /* Find AirportTests */,
+				F446B7502390015D004A6F17 /* Find AirportUITests */,
+				F446B72A2390015C004A6F17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F446B72A2390015C004A6F17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F446B7292390015C004A6F17 /* Find Airport.app */,
+				F446B7422390015D004A6F17 /* Find AirportTests.xctest */,
+				F446B74D2390015D004A6F17 /* Find AirportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F446B72B2390015C004A6F17 /* Find Airport */ = {
+			isa = PBXGroup;
+			children = (
+				F446B75F2390034E004A6F17 /* Airport List */,
+				F446B72C2390015C004A6F17 /* AppDelegate.swift */,
+				F446B72E2390015C004A6F17 /* SceneDelegate.swift */,
+				F446B7302390015C004A6F17 /* ViewController.swift */,
+				F446B7322390015C004A6F17 /* Main.storyboard */,
+				F446B7382390015D004A6F17 /* Assets.xcassets */,
+				F446B73A2390015D004A6F17 /* LaunchScreen.storyboard */,
+				F446B73D2390015D004A6F17 /* Info.plist */,
+				F446B7352390015C004A6F17 /* Find_Airport.xcdatamodeld */,
+			);
+			path = "Find Airport";
+			sourceTree = "<group>";
+		};
+		F446B7452390015D004A6F17 /* Find AirportTests */ = {
+			isa = PBXGroup;
+			children = (
+				F446B7462390015D004A6F17 /* Find_AirportTests.swift */,
+				F446B7482390015D004A6F17 /* Info.plist */,
+			);
+			path = "Find AirportTests";
+			sourceTree = "<group>";
+		};
+		F446B7502390015D004A6F17 /* Find AirportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F446B7512390015D004A6F17 /* Find_AirportUITests.swift */,
+				F446B7532390015D004A6F17 /* Info.plist */,
+			);
+			path = "Find AirportUITests";
+			sourceTree = "<group>";
+		};
+		F446B75F2390034E004A6F17 /* Airport List */ = {
+			isa = PBXGroup;
+			children = (
+				4A663CBC239077D6008AB5DB /* View */,
+				F446B76F23900892004A6F17 /* ViewModel */,
+				F446B77223900A66004A6F17 /* DataStore */,
+				4A663CBB23906E11008AB5DB /* BussinessLayer */,
+				4A663CBA23906DFA008AB5DB /* Network */,
+				F446B76C239006C9004A6F17 /* DataModel */,
+				4A663CB923906D9B008AB5DB /* Utility */,
+			);
+			path = "Airport List";
+			sourceTree = "<group>";
+		};
+		F446B76C239006C9004A6F17 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A663CB323906CFF008AB5DB /* NearestAirport.swift */,
+				4A663CB523906D1B008AB5DB /* Airport.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F446B76F23900892004A6F17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F446B770239008A5004A6F17 /* AirportListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F446B77223900A66004A6F17 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				F446B77323900A7C004A6F17 /* AirportsDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F446B7282390015C004A6F17 /* Find Airport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F446B7562390015D004A6F17 /* Build configuration list for PBXNativeTarget "Find Airport" */;
+			buildPhases = (
+				F446B7252390015C004A6F17 /* Sources */,
+				F446B7262390015C004A6F17 /* Frameworks */,
+				F446B7272390015C004A6F17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Airport";
+			productName = "Find Airport";
+			productReference = F446B7292390015C004A6F17 /* Find Airport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F446B7412390015D004A6F17 /* Find AirportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F446B7592390015D004A6F17 /* Build configuration list for PBXNativeTarget "Find AirportTests" */;
+			buildPhases = (
+				F446B73E2390015D004A6F17 /* Sources */,
+				F446B73F2390015D004A6F17 /* Frameworks */,
+				F446B7402390015D004A6F17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F446B7442390015D004A6F17 /* PBXTargetDependency */,
+			);
+			name = "Find AirportTests";
+			productName = "Find AirportTests";
+			productReference = F446B7422390015D004A6F17 /* Find AirportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F446B74C2390015D004A6F17 /* Find AirportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F446B75C2390015D004A6F17 /* Build configuration list for PBXNativeTarget "Find AirportUITests" */;
+			buildPhases = (
+				F446B7492390015D004A6F17 /* Sources */,
+				F446B74A2390015D004A6F17 /* Frameworks */,
+				F446B74B2390015D004A6F17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F446B74F2390015D004A6F17 /* PBXTargetDependency */,
+			);
+			name = "Find AirportUITests";
+			productName = "Find AirportUITests";
+			productReference = F446B74D2390015D004A6F17 /* Find AirportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F446B7212390015C004A6F17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = tcs;
+				TargetAttributes = {
+					F446B7282390015C004A6F17 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					F446B7412390015D004A6F17 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F446B7282390015C004A6F17;
+					};
+					F446B74C2390015D004A6F17 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F446B7282390015C004A6F17;
+					};
+				};
+			};
+			buildConfigurationList = F446B7242390015C004A6F17 /* Build configuration list for PBXProject "Find Airport" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F446B7202390015C004A6F17;
+			productRefGroup = F446B72A2390015C004A6F17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F446B7282390015C004A6F17 /* Find Airport */,
+				F446B7412390015D004A6F17 /* Find AirportTests */,
+				F446B74C2390015D004A6F17 /* Find AirportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F446B7272390015C004A6F17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F446B788239040EC004A6F17 /* AirportListViewController.xib in Resources */,
+				F446B78223903A2B004A6F17 /* DetailTableViewController.xib in Resources */,
+				F446B73C2390015D004A6F17 /* LaunchScreen.storyboard in Resources */,
+				F446B78623903BE6004A6F17 /* DetailTableViewCell.xib in Resources */,
+				F446B7392390015D004A6F17 /* Assets.xcassets in Resources */,
+				F446B7342390015C004A6F17 /* Main.storyboard in Resources */,
+				F446B76B2390065D004A6F17 /* ResultsTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F446B7402390015D004A6F17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F446B74B2390015D004A6F17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F446B7252390015C004A6F17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F446B76A2390065D004A6F17 /* ResultsTableViewController.swift in Sources */,
+				F446B78523903BE6004A6F17 /* DetailTableViewCell.swift in Sources */,
+				F446B77A239011AB004A6F17 /* AirportRequest.swift in Sources */,
+				F446B7312390015C004A6F17 /* ViewController.swift in Sources */,
+				F446B77E23902D91004A6F17 /* AirportsBussinessLayer.swift in Sources */,
+				F446B78C23905379004A6F17 /* BaseViewController.swift in Sources */,
+				F446B78123903A2B004A6F17 /* DetailTableViewController.swift in Sources */,
+				F446B77623900A97004A6F17 /* NetworkHandler.swift in Sources */,
+				F446B76623900613004A6F17 /* AirportListViewController.swift in Sources */,
+				F446B77C239014CF004A6F17 /* Constants.swift in Sources */,
+				F446B72D2390015C004A6F17 /* AppDelegate.swift in Sources */,
+				4A663CB623906D1B008AB5DB /* Airport.swift in Sources */,
+				F446B7372390015C004A6F17 /* Find_Airport.xcdatamodeld in Sources */,
+				F446B771239008A5004A6F17 /* AirportListViewModel.swift in Sources */,
+				F446B72F2390015C004A6F17 /* SceneDelegate.swift in Sources */,
+				F446B78E23905587004A6F17 /* ActivityIndicator.swift in Sources */,
+				F446B77423900A7C004A6F17 /* AirportsDataStore.swift in Sources */,
+				4A663CB423906CFF008AB5DB /* NearestAirport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F446B73E2390015D004A6F17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F446B7472390015D004A6F17 /* Find_AirportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F446B7492390015D004A6F17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F446B7522390015D004A6F17 /* Find_AirportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F446B7442390015D004A6F17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F446B7282390015C004A6F17 /* Find Airport */;
+			targetProxy = F446B7432390015D004A6F17 /* PBXContainerItemProxy */;
+		};
+		F446B74F2390015D004A6F17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F446B7282390015C004A6F17 /* Find Airport */;
+			targetProxy = F446B74E2390015D004A6F17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F446B7322390015C004A6F17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F446B7332390015C004A6F17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F446B73A2390015D004A6F17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F446B73B2390015D004A6F17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F446B7542390015D004A6F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F446B7552390015D004A6F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F446B7572390015D004A6F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Find Airport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tcs.Find-Airport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F446B7582390015D004A6F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Find Airport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tcs.Find-Airport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F446B75A2390015D004A6F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Find AirportTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tcs.Find-AirportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Airport.app/Find Airport";
+			};
+			name = Debug;
+		};
+		F446B75B2390015D004A6F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Find AirportTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tcs.Find-AirportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Airport.app/Find Airport";
+			};
+			name = Release;
+		};
+		F446B75D2390015D004A6F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Find AirportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tcs.Find-AirportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Find Airport";
+			};
+			name = Debug;
+		};
+		F446B75E2390015D004A6F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Find AirportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tcs.Find-AirportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Find Airport";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F446B7242390015C004A6F17 /* Build configuration list for PBXProject "Find Airport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F446B7542390015D004A6F17 /* Debug */,
+				F446B7552390015D004A6F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F446B7562390015D004A6F17 /* Build configuration list for PBXNativeTarget "Find Airport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F446B7572390015D004A6F17 /* Debug */,
+				F446B7582390015D004A6F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F446B7592390015D004A6F17 /* Build configuration list for PBXNativeTarget "Find AirportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F446B75A2390015D004A6F17 /* Debug */,
+				F446B75B2390015D004A6F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F446B75C2390015D004A6F17 /* Build configuration list for PBXNativeTarget "Find AirportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F446B75D2390015D004A6F17 /* Debug */,
+				F446B75E2390015D004A6F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F446B7352390015C004A6F17 /* Find_Airport.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F446B7362390015C004A6F17 /* Find_Airport.xcdatamodel */,
+			);
+			currentVersion = F446B7362390015C004A6F17 /* Find_Airport.xcdatamodel */;
+			path = Find_Airport.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F446B7212390015C004A6F17 /* Project object */;
+}
